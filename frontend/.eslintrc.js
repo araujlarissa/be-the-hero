@@ -35,6 +35,9 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'react/static-property-placement': 'off',
     'react/jsx-props-no-spreading': 'off',
+    'react/button-has-type': 'off',
+    'react/prop-types': 'off',
+    'no-alert': 'off',
     'no-param-reassign': 'off',
     'no-console': ["error", { allow: ["tron"] }],
     'global-require': 'off'
