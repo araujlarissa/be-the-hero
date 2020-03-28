@@ -1,16 +1,16 @@
-import logoImg from '../../assets/logoDark4.svg';
+import logoImg from '../../assets/logoDarkRed.svg';
 
 export default {
   title: 'dark',
   logo: `${logoImg}`,
 
   colors: {
-    primary: '#e02041',
-    secundary: '#495057',
+    primary: '#E02041',
+    secundary: '#24292E',
 
-    background: '#343A40',
+    background: '#1B1C1E',
 
-    textBold: '#f0f0f5',
+    textBold: '#FBFBFB',
     textMedium: '#ADB5BD',
 
     border: '#495057',

@@ -58,7 +58,7 @@ export const Header = styled.header`
   }
 
   button:hover {
-    border-color: ${(props) => props.theme.colors.textMedium}; /* Regular */
+    border-color: ${(props) => props.theme.colors.textMedium};
   }
 `;
 
@@ -101,5 +101,9 @@ export const Ul = styled.ul`
 
   li button:hover {
     opacity: 0.8;
+  }
+
+  li:hover {
+    border: 1px solid ${(props) => props.theme.colors.border};
   }
 `;

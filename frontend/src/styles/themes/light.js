@@ -1,4 +1,4 @@
-import logoImg from '../../assets/logo.svg';
+import logoImg from '../../assets/logoLight.svg';
 
 export default {
   title: 'light',
@@ -6,13 +6,13 @@ export default {
 
   colors: {
     primary: '#e02041',
-    secundary: '#fff',
+    secundary: '#FBFBFB',
 
     background: '#f0f0f5',
 
     textBold: '#41414d',
     textMedium: '#737380',
 
-    border: '#dcdce6',
+    border: '#C9CED2',
   },
 };

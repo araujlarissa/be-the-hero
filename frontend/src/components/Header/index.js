@@ -18,8 +18,9 @@ const Header = ({ toggleTheme }) => {
         height={10}
         width={40}
         handleDiameter={20}
-        offColor={colors.background}
+        offColor={colors.border}
         onColor={colors.primary}
+        offHandleColor={colors.textMedium}
       />
     </Container>
   );

@@ -13,7 +13,7 @@ export const Content = styled.div`
   width: 100%;
   padding: 96px;
   background: ${(props) => props.theme.colors.background};
-  box-shadow: 0 0 100px ${(props) => props.theme.colors.border};
+  box-shadow: 0 0 80px ${(props) => props.theme.colors.border};
   border-radius: 8px;
 
   display: flex;

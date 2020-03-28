@@ -83,7 +83,7 @@ const Profile = () => {
             </p>
 
             <button onClick={() => handleDeleteIncident(incident.id)}>
-              <FiTrash2 size={20} color={colors.textMedium} />
+              <FiTrash2 size={20} color={colors.primary} />
             </button>
           </li>
         ))}
