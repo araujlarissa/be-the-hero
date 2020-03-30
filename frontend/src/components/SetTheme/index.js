@@ -4,7 +4,7 @@ import { ThemeContext } from 'styled-components';
 
 import { Container } from './styles';
 
-const Header = ({ toggleTheme }) => {
+export default function SetTheme({ toggleTheme }) {
   const { title, logo, colors } = useContext(ThemeContext);
 
   return (
@@ -24,6 +24,4 @@ const Header = ({ toggleTheme }) => {
       />
     </Container>
   );
-};
-
-export default Header;
+}

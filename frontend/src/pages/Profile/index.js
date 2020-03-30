@@ -1,11 +1,13 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { ThemeContext } from 'styled-components';
 import { Link, useHistory } from 'react-router-dom';
-import { FiPower, FiTrash2 } from 'react-icons/fi';
+import { FiPower } from 'react-icons/fi';
 
 import api from '../../services/api';
 
-import { Container, Header, Ul } from './styles';
+import { Container, Header } from './styles';
+
+import IncidentCard from '../../components/IncidentCard';
 
 const Profile = () => {
   const [incidents, setIncidents] = useState([]);
@@ -65,29 +67,14 @@ const Profile = () => {
       </Header>
 
       <h1>Casos cadastrados</h1>
-      <Ul>
+      <ul>
         {incidents.map((incident) => (
-          <li key={incident.id}>
-            <strong>CASO:</strong>
-            <p>{incident.title}</p>
-
-            <strong>DESCRIÇÃO:</strong>
-            <p>{incident.description}</p>
-
-            <strong>VALOR:</strong>
-            <p>
-              {Intl.NumberFormat('pt-BR', {
-                style: 'currency',
-                currency: 'BRL',
-              }).format(incident.value)}
-            </p>
-
-            <button onClick={() => handleDeleteIncident(incident.id)}>
-              <FiTrash2 size={20} color={colors.primary} />
-            </button>
-          </li>
+          <IncidentCard
+            incident={incident}
+            handleDelete={handleDeleteIncident}
+          />
         ))}
-      </Ul>
+      </ul>
     </Container>
   );
 };

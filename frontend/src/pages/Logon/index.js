@@ -1,14 +1,15 @@
 import React, { useState, useContext } from 'react';
 import { ThemeContext } from 'styled-components';
-import { useHistory, Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { FiLogIn } from 'react-icons/fi';
 
 import api from '../../services/api';
 
 import { Container, Section, Form } from './styles';
 
-import { Input } from '../../components/Input';
-import { Button } from '../../components/Button';
+import Input from '../../components/Input';
+import Button from '../../components/Button';
+import BackLink from '../../components/BackLink';
 
 import heroesImg from '../../assets/heroes.png';
 
@@ -51,10 +52,10 @@ const Logon = () => {
           <Button type="submit">Entrar</Button>
         </Form>
 
-        <Link to="/register">
+        <BackLink to="/register">
           <FiLogIn size={16} color={colors.primary} />
           Não tenho cadastro
-        </Link>
+        </BackLink>
       </Section>
 
       <img src={heroesImg} alt="Heroes" />

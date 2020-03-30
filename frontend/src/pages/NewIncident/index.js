@@ -1,14 +1,16 @@
 import React, { useState, useContext } from 'react';
 import { ThemeContext } from 'styled-components';
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi';
 
 import api from '../../services/api';
 
 import { Container, Content, Section, Form } from './styles';
 
-import { Input, TextArea } from '../../components/Input';
-import { Button } from '../../components/Button';
+import Input from '../../components/Input';
+import TextArea from '../../components/TextArea';
+import Button from '../../components/Button';
+import BackLink from '../../components/BackLink';
 
 const NewIncident = () => {
   const [title, setTitle] = useState('');
@@ -55,10 +57,10 @@ const NewIncident = () => {
             isso.
           </p>
 
-          <Link to="/profile">
+          <BackLink to="/profile">
             <FiArrowLeft size={16} color={colors.primary} />
             Voltar para home
-          </Link>
+          </BackLink>
         </Section>
 
         <Form onSubmit={handleNewIncident}>
