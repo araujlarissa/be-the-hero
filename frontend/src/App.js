@@ -6,7 +6,7 @@ import light from './styles/themes/light';
 import dark from './styles/themes/dark';
 
 import GlobalStyle from './styles/global';
-import SetTheme from './components/SetTheme';
+import ToggleTheme from './components/ToggleTheme';
 
 import Routes from './routes';
 
@@ -20,7 +20,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <SetTheme toggleTheme={toggleTheme} />
+      <ToggleTheme toggleTheme={toggleTheme} />
       <Routes />
     </ThemeProvider>
   );
