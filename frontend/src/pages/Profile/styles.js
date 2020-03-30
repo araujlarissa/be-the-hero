@@ -18,6 +18,21 @@ export const Container = styled.div`
     grid-gap: 24px;
     list-style: none;
   }
+
+  @media screen and (max-width: 700px) {
+    ul {
+      grid-template-columns: 1fr;
+    }
+
+    header span {
+      display: none;
+    }
+
+    header img {
+      height: 54px;
+      margin-right: 20px;
+    }
+  }
 `;
 
 export const Header = styled.header`

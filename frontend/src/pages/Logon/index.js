@@ -40,7 +40,7 @@ const Logon = () => {
   return (
     <Container>
       <Section>
-        <img src={logo} alt="Be The Hero" />
+        <img className="logo" src={logo} alt="Be The Hero" />
 
         <Form onSubmit={handleLogin}>
           <h1>Faça seu logon</h1>
@@ -60,7 +60,7 @@ const Logon = () => {
         </BackLink>
       </Section>
 
-      <img src={heroesImg} alt="Heroes" />
+      <img className="heroes" src={heroesImg} alt="Heroes" />
     </Container>
   );
 };

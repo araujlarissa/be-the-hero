@@ -9,6 +9,19 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media screen and (max-width: 1100px) {
+    justify-content: center;
+
+    section {
+      position: absolute;
+      margin: 0 auto;
+    }
+
+    img.heroes {
+      display: none;
+    }
+  }
 `;
 
 export const Section = styled.section`

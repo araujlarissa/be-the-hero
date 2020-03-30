@@ -21,6 +21,24 @@ export const Content = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20%;
+
+    img {
+      margin-top: 10%;
+    }
+
+    a {
+      margin-left: 0px;
+    }
+
+    form {
+      margin-top: 10%;
+    }
+  }
 `;
 
 export const Section = styled.section`
