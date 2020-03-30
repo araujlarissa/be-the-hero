@@ -1,6 +1,8 @@
 import React, { useState, useContext } from 'react';
-import { ThemeContext } from 'styled-components';
 import { useHistory } from 'react-router-dom';
+import { toast } from 'react-toastify';
+
+import { ThemeContext } from 'styled-components';
 import { FiLogIn } from 'react-icons/fi';
 
 import api from '../../services/api';
@@ -31,7 +33,7 @@ const Logon = () => {
 
       history.push('/profile');
     } catch (err) {
-      alert('Falha no login, tente novamente');
+      toast.error('Falha no login, tente novamente');
     }
   }
 

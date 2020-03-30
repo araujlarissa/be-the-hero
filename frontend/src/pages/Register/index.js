@@ -1,6 +1,8 @@
 import React, { useState, useContext } from 'react';
-import { ThemeContext } from 'styled-components';
 import { useHistory } from 'react-router-dom';
+import { toast } from 'react-toastify';
+
+import { ThemeContext } from 'styled-components';
 import { FiArrowLeft } from 'react-icons/fi';
 
 import api from '../../services/api';
@@ -36,11 +38,11 @@ const Register = () => {
     try {
       const response = await api.post('/ongs', data);
 
-      alert(`Seu ID de acesso: ${response.data.id}`);
+      toast.success(`Seu ID de acesso: ${response.data.id}`);
 
       history.push('/');
     } catch (err) {
-      alert('Erro no cadastro, tente novamente.');
+      toast.error('Erro no cadastro, tente novamente.');
     }
   }
 

@@ -1,6 +1,8 @@
 import React, { useState, useContext } from 'react';
 import { ThemeContext } from 'styled-components';
 import { useHistory } from 'react-router-dom';
+import { toast } from 'react-toastify';
+
 import { FiArrowLeft } from 'react-icons/fi';
 
 import api from '../../services/api';
@@ -41,7 +43,7 @@ const NewIncident = () => {
 
       history.push('/profile');
     } catch (err) {
-      alert('Erro ao cadastrar caso, tente novamente.');
+      toast.error('Erro ao cadastrar caso, tente novamente.');
     }
   }
 

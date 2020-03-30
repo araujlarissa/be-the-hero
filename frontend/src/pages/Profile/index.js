@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useContext } from 'react';
-import { ThemeContext } from 'styled-components';
 import { Link, useHistory } from 'react-router-dom';
+import { toast } from 'react-toastify';
+
+import { ThemeContext } from 'styled-components';
 import { FiPower } from 'react-icons/fi';
 
 import api from '../../services/api';
@@ -41,7 +43,7 @@ const Profile = () => {
 
       setIncidents(incidents.filter((incident) => incident.id !== id));
     } catch (err) {
-      alert('Erro ao deletar caso, tente novamente.');
+      toast.error('Erro ao deletar caso, tente novamente.');
     }
   }
 
@@ -66,14 +68,18 @@ const Profile = () => {
         </button>
       </Header>
 
-      <h1>Casos cadastrados</h1>
+      {incidents.length > 0 ? <h1>Casos cadastrados</h1> : null}
       <ul>
-        {incidents.map((incident) => (
-          <IncidentCard
-            incident={incident}
-            handleDelete={handleDeleteIncident}
-          />
-        ))}
+        {incidents.length > 0 ? (
+          incidents.map((incident) => (
+            <IncidentCard
+              incident={incident}
+              handleDelete={handleDeleteIncident}
+            />
+          ))
+        ) : (
+          <h1>Não há casos cadastrados.</h1>
+        )}
       </ul>
     </Container>
   );

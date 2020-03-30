@@ -1,4 +1,6 @@
 import React from 'react';
+import { ToastContainer } from 'react-toastify';
+
 import { ThemeProvider } from 'styled-components';
 import usePersistedState from './utils/usePersistedState';
 
@@ -22,6 +24,7 @@ function App() {
       <GlobalStyle />
       <ToggleTheme toggleTheme={toggleTheme} />
       <Routes />
+      <ToastContainer autoClose={3500} />
     </ThemeProvider>
   );
 }
