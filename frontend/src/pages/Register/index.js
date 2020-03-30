@@ -38,9 +38,16 @@ const Register = () => {
     try {
       const response = await api.post('/ongs', data);
 
-      toast.success(`Seu ID de acesso: ${response.data.id}`);
+      const { id } = response.data;
 
-      history.push('/');
+      const session = await api.post('/sessions', { id });
+
+      localStorage.setItem('ongId', id);
+      localStorage.setItem('ongName', session.data.name);
+
+      toast.success(`Seu ID de acesso: ${id}`);
+
+      history.push('/profile');
     } catch (err) {
       toast.error('Erro no cadastro, tente novamente.');
     }
