@@ -1,78 +1,61 @@
-import { StyleSheet } from 'react-native';
+import styled from 'styled-components/native';
 import Constants from 'expo-constants';
 
-export default StyleSheet.create({
-  container: {
-    flex: 1,
-    paddingHorizontal: 24,
-    paddingTop: Constants.statusBarHeight + 20
-  },
+export const Container = styled.View`
+  flex: 1;
+  padding: ${Constants.statusBarHeight + 20}px 24px 0;
+  background: #1b1c1e;
+`;
 
-  header: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center'
-  },
+export const Header = styled.View`
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+`;
 
-  incident: {
-    padding: 24,
-    borderRadius: 8,
-    backgroundColor: '#fff',
-    marginBottom: 16,
-    marginTop: 48
-  },
+export const DetailContainer = styled.View`
+  padding: 24px;
+  border-radius: 8px;
+  background-color: #24292e;
+  margin-bottom: 16px;
+  margin-top: 48px;
+`;
 
-  incidentProperty: {
-    fontSize: 14,
-    color: '#41414d',
-    fontWeight: 'bold',
-    marginTop: 24,
-  },
+export const Label = styled.Text`
+  font-size: 14px;
+  color: #fbfbfb;
+  font-weight: bold;
+  margin-top: 24px;
+`;
 
-  incidentValue: {
-    marginTop: 8,
-    fontSize: 15,
-    color: '#737380'
-  },
+export const Value = styled.Text`
+  margin-top: 8px;
+  font-size: 15px;
+  color: #adb5bd;
+`;
 
-  contactBox: {
-    padding: 24,
-    borderRadius: 8,
-    backgroundColor: '#fff',
-    marginBottom: 16
-  },
+export const ContactContainer = styled.View`
+  padding: 24px;
+  border-radius: 8px;
+  background-color: #24292e;
+  margin-bottom: 16px;
+`;
 
-  heroTitle: {
-    fontWeight: 'bold',
-    fontSize: 20,
-    color: '#13131a',
-    lineHeight: 30
-  },
+export const Title = styled.Text`
+  font-weight: bold;
+  font-size: 20px;
+  color: #fbfbfb;
+  line-height: 30px;
+`;
 
-  heroDescription: {
-    fontSize: 15,
-    color: '#737380',
-    marginTop: 16
-  },
+export const Description = styled.Text`
+  font-size: 15px;
+  color: #adb5bd;
+  margin-top: 16px;
+`;
 
-  actions: {
-    marginTop: 16,
-    flexDirection: 'row',
-    justifyContent: 'space-between'
-  },
-
-  action: {
-    backgroundColor: '#e02041',
-    borderRadius: 8,
-    height: 50,
-    width: '48%',
-    justifyContent: 'center',
-    alignItems: 'center'
-  },
-
-  actionText: {
-    color: '#fff',
-    fontSize: 15,
-    fontWeight: 'bold'
-  } 
-});
+export const ButtonContainer = styled.View`
+  margin-top: 16px;
+  flex-direction: row;
+  justify-content: space-between;
+`;

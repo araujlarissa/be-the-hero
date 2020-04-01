@@ -1,75 +1,41 @@
-import { StyleSheet } from 'react-native';
+import styled from 'styled-components/native';
 import Constants from 'expo-constants';
 
-export default StyleSheet.create({
-  container: {
-    flex: 1,
-    paddingHorizontal: 24,
-    paddingTop: Constants.statusBarHeight + 20
-  },
+export const Container = styled.View`
+  flex: 1;
+  padding: ${Constants.statusBarHeight + 20}px 24px 0;
+  background: #1b1c1e;
+`;
 
-  header: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center'
-  },
+export const Header = styled.View`
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+`;
 
-  headerText: {
-    fontSize: 15,
-    color: '#737380'
-  },
+export const HeaderText = styled.Text`
+  font-size: 15px;
+  color: #adb5bd;
+`;
 
-  headerTextBold: {
-    fontWeight: 'bold'
-  },
+export const HeaderTextBold = styled.Text`
+  font-weight: bold;
+`;
 
-  title: {
-    fontSize: 30,
-    marginBottom: 16,
-    marginTop: 48,
-    color: '#13131a',
-    fontWeight: 'bold'
-  },
+export const Title = styled.Text`
+  font-size: 30px;
+  margin-bottom: 16px;
+  margin-top: 48px;
+  color: #fbfbfb;
+  font-weight: bold;
+`;
 
-  description: {
-    fontSize: 16,
-    lineHeight: 24,
-    color: '#737380'
-  },
+export const Description = styled.Text`
+  font-size: 16px;
+  line-height: 24px;
+  color: #adb5bd;
+`;
 
-  incidentList: {
-    marginTop: 32
-  },
-
-  incident: {
-    padding: 24,
-    borderRadius: 8,
-    backgroundColor: '#fff',
-    marginBottom: 16
-  },
-
-  incidentProperty: {
-    fontSize: 14,
-    color: '#41414d',
-    fontWeight: 'bold'
-  },
-
-  incidentValue: {
-    marginTop: 8,
-    fontSize: 15,
-    marginBottom: 24,
-    color: '#737380'
-  },
-  
-  detailsButton: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center'
-  },
-
-  detailsButtonText: {
-    color: '#e02041',
-    fontSize: 15,
-    fontWeight: 'bold'
-  }
-});
+export const IncidentList = styled.FlatList`
+  margin-top: 32px;
+`;

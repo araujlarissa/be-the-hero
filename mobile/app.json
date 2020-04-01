@@ -15,7 +15,7 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#E02041"
+      "backgroundColor": "#e02041"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -23,8 +23,13 @@
     "assetBundlePatterns": [
       "**/*"
     ],
+    "userInterfaceStyle": "automatic",
     "ios": {
+      "userInterfaceStyle": "dark",
       "supportsTablet": true
+    },
+    "android": {
+      "userInterfaceStyle": "dark"
     }
   }
 }

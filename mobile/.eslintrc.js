@@ -1,5 +1,4 @@
 module.exports = {
-  parser: 'babel-eslint',
   env: {
     browser: true,
     es6: true,
@@ -13,6 +12,7 @@ module.exports = {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
   },
+  parser: 'babel-eslint',
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -22,23 +22,34 @@ module.exports = {
   },
   plugins: [
     'react',
-    'prettier'
+    'prettier',
+    'react-hooks',
+    'jsx-a11y',
+    'import'
   ],
   rules: {
     'prettier/prettier': 'error',
     'react/jsx-filename-extension': [
       'warn',
-      { extensions: ['.jsx', '.js' ]}
+      { extensions: ['.jsx', '.js' ] }
     ],
     'import/prefer-default-export': 'off',
-    'react/state-in-constructor': 'off',
+    'import/no-extraneous-dependencies': 'off',
+    "react/state-in-constructor": "off",
     'react/static-property-placement':'off',
     'react/jsx-props-no-spreading': 'off',
-    'react/button-has-type': 'off',
     'react/prop-types': 'off',
     'no-param-reassign': 'off',
-    'no-alert': 'off',
     'no-console': ['error', { allow: ['tron'] }],
-    'global-require': 'off'
+
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
   },
+  settings: {
+    'import/resolver': {
+      'babel-plugin-root-import': {
+        rootPathSuffix: 'src'
+      },
+    },
+  }
 };
