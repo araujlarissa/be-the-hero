@@ -1,23 +1,23 @@
 <h1 align="center">
-    <img alt="Be The Hero" src="./assets/logoLight.svg" width="200px" />
+    <img alt="Be The Hero" src="./.github/logo.svg" width="200px" />
 </h1>
 
 <p align="center">
-  <a href="#pushpin-overview">Overview</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#computer-modifications">Modifications</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#computer-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#pushpin-modifications">Modifications</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#rocket-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-license">License</a>
 </p>
 
-## :pushpin: Overview
-The purpose of the application is to connect NGOs with people who can help with donations.
+## :computer: Project
+Be The Hero, the purpose of the application is to connect NGOs with people who can help with donations.
 
-## :computer: Modifications
+## :pushpin: Modifications
 1. When the user registers, he will be redirected to the 'profile' route.
 2. When the NGO has no registered cases, a message appears stating that there are no registered cases.
 3. Eslint and Prettier to standardize the code, both in the frontend and in the mobile.
 4. Styled-components to style the application.
-5. Dark Theme and Light Theme, both in the frontend and in the mobile.
+5. Dark Theme and Light Theme in the frontend .
 6. Responsive frontend.
 7. Custom alerts.
 
