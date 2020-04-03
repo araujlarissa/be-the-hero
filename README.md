@@ -3,27 +3,27 @@
 </h1>
 
 <p align="center">
-  <a href="#computer-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#pushpin-modifications">Modifications</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#rocket-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-license">License</a>
+  <a href="#computer-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#pushpin-modificações">Modificações</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-licença">Licença</a>
 </p>
 
-## :computer: Project
-Be The Hero, the purpose of the application is to connect NGOs with people who can help with donations.
+## :computer: Projeto
+Be The Hero, o objetivo do aplicação é conectar ONGs com pessoas que podem ajudar com doações em seus casos.
 
-## :pushpin: Modifications
-1. When the user registers, he will be redirected to the 'profile' route.
-2. When the NGO has no registered cases, a message appears stating that there are no registered cases.
-3. Eslint and Prettier to standardize the code, both in the frontend and in the mobile.
-4. Styled-components to style the application.
-5. Dark Theme and Light Theme in the frontend .
-6. Responsive frontend.
-7. Custom alerts.
+## :pushpin: Modificações
+1. Quando o usuário se registrar, ele será redirecionado para a rota 'profile'.
+2. Quando a ONG não possui casos registrados, aparece uma mensagem informando que não há casos registrados.
+3. Eslint e Prettier para padronizar o código, tanto no front-end quanto no mobile.
+4. Styled-components para estilizar a aplicação.
+5. Dark/Light Theme no frontend.
+6. Front-end responsivo.
+7. Alertas personalizados.
 
-## :rocket: Technologies
+## :rocket: Tecnologias
 
-This project was developed with the following technologies:
+Este projeto foi desenvolvido com as seguintes tecnologias:
 
 Backend
 
@@ -52,9 +52,9 @@ Mobile
 - [React navigation](https://reactnavigation.org/)
 - [Styled Components](https://styled-components.com/docs)
 
-## :memo: License
+## :memo: Licença
 
-This project is under the MIT license. See the [LICENSE](https://github.com/arauj0/be-the-hero/blob/master/LICENSE) for more information.
+Este projeto está sob a licença MIT. Veja o [LICENSE](https://github.com/arauj0/be-the-hero/blob/master/LICENSE) para maiores informações.
 
 ---
 

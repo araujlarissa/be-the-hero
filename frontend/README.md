@@ -1,17 +1,17 @@
 <h1 align="center">
-    <img alt="Be The Hero" src="../.github/frontend.png" />
+    <img alt="Be The Hero" src="../.github/frontend.png" width="800px" />
 </h1>
 
-## :computer: Modifications
-1. When the user registers, he will be redirected to the 'profile' route.
-2. When the NGO has no registered cases, a message appears stating that there are no registered cases.
-3. Eslint and Prettier to standardize the code.
-4. Styled-components to style the application.
-5. Dark Theme and Light Theme.
-6. Responsive frontend.
-7. Custom alerts.
+## :pushpin: Modificações
+1. Quando o usuário se registrar, ele será redirecionado para a rota 'profile'.
+2. Quando a ONG não possui casos registrados, aparece uma mensagem informando que não há casos registrados.
+3. Eslint e Prettier para padronizar o código.
+4. Styled-components para estilizar a aplicação.
+5. Dark/Light Theme.
+6. Front-end responsivo.
+7. Alertas personalizados.
 
-## :rocket: Technologies
+## :rocket: Tecnologias
 
 - [Axios](https://github.com/axios/axios)
 - [React](https://reactjs.org/)
@@ -20,9 +20,9 @@
 - [React toastify](https://www.npmjs.com/package/react-toastify)
 - [Styled Components](https://styled-components.com/docs)
 
-## :memo: License
+## :memo: Licença
 
-This project is under the MIT license. See the [LICENSE](https://github.com/arauj0/be-the-hero/blob/master/LICENSE) for more information.
+Este projeto está sob a licença MIT. Veja o [LICENSE](https://github.com/arauj0/be-the-hero/blob/master/LICENSE) para maiores informações.
 
 ---
 

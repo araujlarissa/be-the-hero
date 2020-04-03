@@ -2,12 +2,12 @@
     <img alt="Be The Hero" src="../.github/mobile.png" height="400px" />
 </h1>
 
-## :computer: Modifications
-1. Eslint and Prettier to standardize the code.
-2. Styled-components to style the application.
+## :pushpin: Modificações
+1. Eslint e Prettier para padronizar o código.
+2. Styled-components para estilizar a aplicação.
 3. Dark Theme.
 
-## :rocket: Technologies
+## :rocket: Tecnologias
 
 - [Axios](https://github.com/axios/axios)
 - [Expo](https://expo.io/)
@@ -17,9 +17,9 @@
 - [React navigation](https://reactnavigation.org/)
 - [Styled Components](https://styled-components.com/docs)
 
-## :memo: License
+## :memo: Licença
 
-This project is under the MIT license. See the [LICENSE](https://github.com/arauj0/be-the-hero/blob/master/LICENSE) for more information.
+Este projeto está sob a licença MIT. Veja o [LICENSE](https://github.com/arauj0/be-the-hero/blob/master/LICENSE) para maiores informações.
 
 ---
 
